@@ -1,0 +1,36 @@
+drop database picture_perfect;
+
+create database picture_perfect;
+
+
+
+
+use picture_perfect;
+
+
+create table artists(artist_id int(10) primary key auto_increment,first_name varchar(20) default null,middle_name varchar(20) default null,last_name varchar(20) not null,country varchar(20));
+
+create table prints(print_id int(10) primary key auto_increment,artist_id int(10) not null,print_name varchar(60) not null,price decimal(6,2) unsigned not null,size varchar(60) default null,description varchar(255) default null,image_name varchar(60) not null,foreign key(artist_id) references artists(artist_id) );
+
+
+create table customer_info (customer_id int(10) primary key auto_increment,email varchar(60) not null,pass char(40) not null);
+
+
+
+create table order_info(order_id int(10) unsigned primary key auto_increment,customer_id int(10) not null,total decimal(10,2) unsigned not null,order_date timestamp,foreign key(customer_id) references customer_info(customer_id) );
+
+
+
+create table orders_content_info(oc_id int(10) unsigned primary key auto_increment,order_id int(10) unsigned not null,print_id int(10) not null,quantity int(2) not null default 1,price decimal (6,2) not null,ship_date datetime default null,foreign key(order_id) references order_info(order_id),foreign key(print_id) references prints(print_id));
+
+
+
+select * from artists;
+
+select * from prints;
+
+select * from order_info;
+
+select * from customer_info;
+
+select * from orders_content_info;

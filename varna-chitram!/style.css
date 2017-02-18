@@ -1,0 +1,83 @@
+.col-md-12{
+  align-content: center;
+}
+body{
+  background-image:url(1.jpg); 
+}
+h3{
+  color:white;
+}
+h5{
+  color: #ffd700;
+}
+
+.a-box{
+border: 1px solid #1e69b5;
+border-radius: 1px;
+padding: 12px;
+box-sizing
+
+}
+@media (min-width: 900px) {
+.a-box {
+width: 75%;
+}
+}
+
+#submit{
+  color: white;
+  background:no-repeat;
+  width: 100%;
+  text-align: center;
+  border-color: #1e69b5;
+}
+.checkbox{
+  padding-left: 12px;
+}
+
+.btn{
+ background:no-repeat;
+  width: 100%;
+  text-align: center;
+  border-color: #1e69b5;
+}
+
+#sbtn{
+  width:100%;
+  background:no-repeat;
+  width: 100%;
+  text-align: center;
+  border-color: #1e69b5;
+}
+.container{
+  padding: 12px;
+
+}
+#create{
+  width: 100%;
+  background:no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6px;
+  border-color: #1e69b5;
+}
+
+
+
+.first-slide{
+        background-image: url(1.jpg);
+      }
+      .second-slide{
+        background-image: url(1.jpg);
+      }
+      .third-slide{
+        background-image: url(1.jpg);
+      }
+
+      #ravi{
+        background-image: url(ravi.png);
+
+      }
+      #manager{
+        background-image: url(Manager.png);
+      }
